@@ -1,0 +1,14 @@
+{
+  "name": "左サイドUI 拡張",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "左サイドにUIを出す",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": []
+}
