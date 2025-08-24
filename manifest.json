@@ -10,5 +10,11 @@
       "css": ["style.css"]
     }
   ],
+  "web_accessible_resources": [{
+    "resources": [
+      "panels/memo/index.html"
+    ],
+    "matches": ["<all_urls>"]
+  }],
   "permissions": []
 }
