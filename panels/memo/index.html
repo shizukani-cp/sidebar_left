@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メモアプリ</title>
+  <link rel="stylesheet" href="https://shizukani-cp.github.io/basestyle.css/basestyle-dark.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="marked.min.js"></script>
+</head>
+
+<body>
+  <div id="sidebar">
+    <div id="sidebar-controls">
+      <button class="button" id="new-memo-btn">新規作成</button>
+      <button class="button" id="save-memo-btn">保存</button>
+      <button class="button" id="export-memo-btn">メモをエクスポート</button>
+      <input type="file" id="file-input" style="display: none;">
+      <button class="button" id="import-memo-btn" onclick="document.getElementById('file-input').click()">メモをインポート</button>
+    </div>
+    <div id="sidebar-memos">
+      <h2>メモ一覧</h2>
+      <ul id="memo-list">
+        <!-- メモの一覧はここに動的に生成されます -->
+      </ul>
+    </div>
+  </div>
+  <div id="main">
+    <div id="memo-content">
+      <!-- 選択されたメモの内容はここに表示されます -->
+    </div>
+    <div id="display-controls">
+      <label for="display-markdown">マークダウンを表示</label>
+      <input type="checkbox" id="display-markdown"><br>
+      <button id="markdown-reload" class="button" style="display: none; margin-top: 5px;">マークダウンを更新</button>
+    </div>
+    <div id="markdown-area" style="visibility: hidden;">
+      <div id="markdown-result"></div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
