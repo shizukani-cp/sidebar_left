@@ -68,5 +68,6 @@ function addSidebarButton(iconHtml, url) {
 }
 
 // 例：拡張内のHTMLページでボタン追加（manifest.jsonでweb_accessible_resourcesに含めること）
-addSidebarButton("&#128211;", chrome.runtime.getURL("panels/memo/index.html")); // ノートアイコン
+addSidebarButton("&#x1F5D2;", chrome.runtime.getURL("panels/memo/index.html")); // ノートアイコン
+addSidebarButton("&#x1F4D6;", chrome.runtime.getURL("panels/readinglists/index.html")); // リーディングリスト
 

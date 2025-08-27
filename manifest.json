@@ -12,9 +12,13 @@
   ],
   "web_accessible_resources": [{
     "resources": [
-      "panels/memo/index.html"
+      "panels/memo/index.html",
+      "panels/readinglists/index.html"
     ],
     "matches": ["<all_urls>"]
   }],
-  "permissions": []
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  }
 }
